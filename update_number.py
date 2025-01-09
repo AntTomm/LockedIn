@@ -48,7 +48,7 @@ def update_number():
         print(f"Error updating number: {e}")
 
 # schedule every day at specific time
-schedule.every(1).minutes.do(update_number)
+schedule.every().day.at("06:00").do(update_number)
 
 print("Scheduler is running. The script will execute daily at 6:00 AM.")
 
